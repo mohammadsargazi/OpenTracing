@@ -1,0 +1,33 @@
+{
+
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Users",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "24987"
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Users/List",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "24987"
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Users/Add",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    }
+  ]
+}
